@@ -56,3 +56,50 @@ git clone <GITHUB_REPO_URL>
 ```
 jupyter notebook <NLP - Clasificacion Automatica de Tickets.ipynb>
 ```
+
+### Data Reading / Data Understanding
+
+
+
+### Data Cleaning
+
+
+
+### Data Preprocessing
+
+
+
+### Data Visualization
+
+
+
+### Feature Extraction
+
+
+
+### Topic Modelling
+Para el modelado de tópicos se ha hecho uso de limpieza mediante spaCy y PoS de spaCy, esto debido a que se consideró que tendrá un mayor rendimiento considerando spaCy SM utiliza GloVe.
+
+Para NMF se hace uso de scikit-learn, se prueba con n = 4 y se establece que no es un valor óptimo, a la vez se prueba con n = 5 y se aprecia un mejor resultado, con ello y mediante evaluación de las sentencias RAW se llega a la conclusión de los siguientes tags:
+* Topic 0: Otros (Others)
+* Topic 1: Reporte de robos (Theft/Dispute Reporting)
+* Topic 2: Servicio de cuenta de banco (Bank Account services)
+* Topic 3: Tarjeta de crédito (Credit card or prepaid card)
+* Topic 4: Prestamos Hipotecarios y Otros Prestamos (Mortgage/Loan)
+
+También se ha hecho la prueba con BERTopic, una red que utiliza transformers y tiene mayor rendimiento, pudiendo otorgar un poco más de información, se evalua el resultado del procesamiento de datos RAW como también con la limpieza, siendo coherente que con la limpieza aún con redes tan potentes se obtiene un resultado mucho mejor y apropiado, BERTopic utiliza HDBSCAN para estimar la cantidad de tópicos, sin embargo se ha visto prudente utilizarlo con n = 5.
+
+### Model Building
+
+
+
+### Model Inference
+
+
+
+### Code readability and conciseness
+
+
+## Conclusiones
+
+
