@@ -71,10 +71,17 @@ jupyter notebook <NLP - Clasificacion Automatica de Tickets.ipynb>
 
 ### Data Visualization
 
-
+Para la visualizacion de datos se realizó Análisis exploratorio de datos para familiarizarse con los mismos.
+Se hizo la visualizacion de datos de acuerdo a los caracteres de longitud segun las quejas que se tenian dentro del archivo o dataset .Uilizando el conglomerado de palabras  se realizo el objeto TF-IDF para vectorizar y ajustar el dataset para encontrar las palaabras frecunetes y otras que son escazas o raras dentro del dataset con ello determinamos los n-gramas con el proposito  de obtener el conjunto de caracteristicas (palabras) en el vector.
+Estos pasos nos permitirán utilizar para la extraccion de  información de los datos en el dataset de tickets y visualizarla. Tambien podremos ajustar los parámetros del vectorizer según las necesidades y preferencias que se requieren para los complaints. Por ultimo  realizaremos el uso de métodos de procesamiento de lenguaje natural, como la lematización o el filtrado de stop words para la clasificacion de texto, antes de aplicar Tf-Idf para obtener resultados más precisos dentro del proyecto.
 
 ### Feature Extraction
 
+La extracción de características (feature extraction) nos permite realizar un proceso común en el análisis de datos y en el procesamiento del lenguaje natural. El fin de la extracción de características es transformar estos datos de entrada (en este caso el texto para el proposito del proyecto) en un conjunto de características que sean más relevantes y significativas para nuestro análisis del presente dataset.
+El uso de max_df y min_df se realizo para el siguiente fin:
+max_df se usó para eliminar términos que aparecen con demasiada frecuencia, también conocidos como "palabras vacías específicas dentro del cuerpo del texto" el promedio de max_df = 0.95 significa "ignorar términos que aparecen en más del 95% de las quejas"
+
+min_df se usó  para eliminar términos que aparecen con poca frecuencia el promedio del min_df = 2 significa "ignorar términos que aparecen en menos de 2 quejas"
 
 
 ### Topic Modelling
