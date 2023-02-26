@@ -136,7 +136,7 @@ Utilizando dicho modelo para el entrenamiento se tiene los siguientes resultados
 
 ### Model Inference
 
-Se utiliza el archivo random_complaints.csv para inferir los resultados usado el modelo elegido, por ejemplo para el siguiente texto: 
+Se utiliza el archivo random_complaints.csv para inferir los resultados usado el modelo elegido (regresión logística), por ejemplo para el siguiente texto: 
 
 "jp morgan chase bank  an individual or group of individuals have accessed sensitive information and are now calling in to document fake reports on my name and have blocked me out of my checking account  its a collective group of individuals doing a mass fraud scheme and have simply targeted me for whatever hateful and spiteful reasons.".
 
