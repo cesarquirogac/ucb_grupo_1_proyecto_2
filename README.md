@@ -4,7 +4,20 @@
 
 ## Introducción
 
+Este proyecto fue creado como parte de la catedra de Machine Learning de la maestria de Ciencia de Datos de la Universidad Catolica Boliviana
 
+Este repositorio contiene un archivo colab ipyn que realiza la clasificación de quejas en formato de texto para identificar aspectos importantes para
+ara analizar patrones y clasificar los tickets en los siguientes cinco grupos según sus productos/servicios:
+
+Tarjetas de Credito / Tarjetas Prepagadas (Credit card / Prepaid Card)
+
+Servicios de Cuentas de Banco (Bank account services)
+
+Reportes de Robos (Theft/Dispute reporting)
+
+Prestamos Hipotecarios y Otros Prestamos (Mortgages/loans)
+
+Los datos estan provistos en el archivo complaints.json y complaints_cleaned.xlsx.
 
 ## Personas involucrudas en el proyecto
 * Alicia Zamorano zamoranoalicia@gmail.com
