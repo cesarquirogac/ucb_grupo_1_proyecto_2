@@ -146,6 +146,13 @@ Se indica que es del tópico 2: Bank Account services, lo cual es correcto.
 
 El código contempla comentarios en las secciones correspondientes, a la vez se tiene markdowns si es necesario ampliar el texto, se considera la misma indentación en todo el código y en lo mayor posible se mantiene el idioma español.
 
-## Conclusiones
-
-
+## Conclusiones y recomendaciones
+Se puede concluir con lo siguiente:
+* Tanto NLTK y spaCy son ideales para lemmatización
+* Los procesos de entrenamiento sin GPU pueden demorar en exceso en estas tareas
+* Es necesario el preprocesamiento de los datos como un componente crítico antes de aplicar modelos
+* Los tópicos son fácilmente identificables utilizando BERTopic y NMF
+* TF-IDF es esencial para las tareas, la mayoría de los modelos lo utilizan en algún punto
+* La regresión logística fue el mejor modelo obtenible después de la evaluación dada
+* Utilizar clustering y posteriormente entrenamiento supervisado es ideal para el procesamiento de quejas
+* Se recomienda profundizar en nuevas redes que utilicen transformers, el dataset da para obtener mayor información y precisión con nuevos modelos
