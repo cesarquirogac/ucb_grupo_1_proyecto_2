@@ -58,15 +58,87 @@ jupyter notebook <NLP - Clasificacion Automatica de Tickets.ipynb>
 ```
 
 ### Data Reading / Data Understanding
-
-
+Se cargo los datos con la ayuda de collab files, se inicio con la identificacion de las columnas del dataframe y se pudo identificar 24 columnas y 78313 filas
+ #   Column                             Non-Null Count  Dtype  
+---  ------                             --------------  -----  
+ 0   _index                             78313 non-null  object 
+ 1   _type                              78313 non-null  object 
+ 2   _id                                78313 non-null  object 
+ 3   _score                             78313 non-null  float64
+ 4   _source.tags                       10900 non-null  object 
+ 5   _source.zip_code                   71556 non-null  object 
+ 6   _source.complaint_id               78313 non-null  object 
+ 7   _source.issue                      78313 non-null  object 
+ 8   _source.date_received              78313 non-null  object 
+ 9   _source.state                      76322 non-null  object 
+ 10  _source.consumer_disputed          78313 non-null  object 
+ 11  _source.product                    78313 non-null  object 
+ 12  _source.company_response           78313 non-null  object 
+ 13  _source.company                    78313 non-null  object 
+ 14  _source.submitted_via              78313 non-null  object 
+ 15  _source.date_sent_to_company       78313 non-null  object 
+ 16  _source.company_public_response    4 non-null      object 
+ 17  _source.sub_product                67742 non-null  object 
+ 18  _source.timely                     78313 non-null  object 
+ 19  _source.complaint_what_happened    78313 non-null  object 
+ 20  _source.sub_issue                  32016 non-null  object 
+ 21  _source.consumer_consent_provided  77305 non-null  object 
 
 ### Data Cleaning
+Para realizar la limpieza de datos se identifico que columnas contienen valores nulos.
+_index                                   0
+_type                                    0
+_id                                      0
+_score                                   0
+_source.tags                         67413
+_source.zip_code                      6757
+_source.complaint_id                     0
+_source.issue                            0
+_source.date_received                    0
+_source.state                         1991
+_source.consumer_disputed                0
+_source.product                          0
+_source.company_response                 0
+_source.company                          0
+_source.submitted_via                    0
+_source.date_sent_to_company             0
+_source.company_public_response      78309
+_source.sub_product                  10571
+_source.timely                           0
+_source.complaint_what_happened          0
+_source.sub_issue                    46297
+_source.consumer_consent_provided     1008
 
+Se removio las columnas con valoes nulos y valore unicos, las columnas eliminadas son las siguienes
+1.0 '_source.tags'
+2.0 '_source.company_public_response'
+3.0 '_source.sub_issue'
+4.0 '_id'
+5.0 '_source.complaint_id'
 
-
+Se renombro las columnas:
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   index                     77712 non-null  object 
+ 1   type                      77712 non-null  object 
+ 2   score                     77712 non-null  float64
+ 3   zip_code                  71012 non-null  object 
+ 4   issue                     77712 non-null  object 
+ 5   date_received             77712 non-null  object 
+ 6   state                     75758 non-null  object 
+ 7   consumer_disputed         77712 non-null  object 
+ 8   product                   77712 non-null  object 
+ 9   company_response          77712 non-null  object 
+ 10  company                   77712 non-null  object 
+ 11  submitted_via             77712 non-null  object 
+ 12  date_sent_to_company      77712 non-null  object 
+ 13  sub_product               67245 non-null  object 
+ 14  timely                    77712 non-null  object 
+ 15  complaint_what_happened   77712 non-null  object 
+ 16  consumer_conset_provided  76719 non-null  object 
+ 
 ### Data Preprocessing
-
+Para el procesamiento de los datos se cambio el tipo de las columnas para convertirlos en datos categoricos para despues poder hacer el procesamiento de los datos ![graph](https://user-images.githubusercontent.com/6982690/221391320-6477beae-6d6d-4a45-8bf1-162febc87a37.png)
 
 
 ### Data Visualization
