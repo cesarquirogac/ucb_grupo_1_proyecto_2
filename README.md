@@ -125,23 +125,22 @@ La columna "Model" indica el nombre del modelo correspondiente. La columna "Trai
 
 La regresión logística tiene un alto puntaje de validación cruzada y de validación en los datos de entrenamiento y validación respectivamente, lo que sugiere que es un modelo estable y generaliza bien para datos nuevos. Por lo tanto, se puede elegir el modelo de regresión logística como el mejor modelo para clasificar las quejas en temas.
 
-El modelo obtuvo un Accuracy de 0.92, lo que significa que el 92% de las quejas fueron clasificadas correctamente.
-
-El valor de Precision de 0.93 indica que cuando el modelo clasifica una queja como perteneciente a un tema en particular, el 93% de las veces esta clasificación es correcta.
-
-El valor de Recall de 0.92 indica que el 92% de las quejas pertenecientes a un tema en particular fueron identificadas correctamente por el modelo.
-
-El valor de F1 Score de 0.92 indica que el modelo tiene un buen equilibrio entre Precision y Recall.
-
-La matriz de confusión (Confusion Matrix) muestra que la mayoría de las quejas son clasificadas correctamente por el modelo, y que los errores de clasificación se concentran principalmente en los temas 1 y 2.
-
-El reporte de clasificación (Classification Report) proporciona una visión detallada de las métricas de evaluación para cada tema, incluyendo la precisión, recall y F1-score. Los valores más altos de estas métricas se observan en los temas 0, 1 y 2, mientras que los valores más bajos se observan en los temas 3 y 4.
-
-Por los resultados se puede concluir que el modelo tiene un buen desempeño en la clasificación de las quejas, con un alto porcentaje de casos clasificados correctamente, un buen equilibrio entre Precision y Recall, y un bajo número de errores de clasificación.
+Utilizando dicho modelo para el entrenamiento se tiene los siguientes resultados:
+* El modelo obtuvo un Accuracy de 0.92, lo que significa que el 92% de las quejas fueron clasificadas correctamente.
+* El valor de Precision de 0.93 indica que cuando el modelo clasifica una queja como perteneciente a un tema en particular, el 93% de las veces esta clasificación es correcta.
+* El valor de Recall de 0.92 indica que el 92% de las quejas pertenecientes a un tema en particular fueron identificadas correctamente por el modelo.
+* El valor de F1 Score de 0.92 indica que el modelo tiene un buen equilibrio entre Precision y Recall.
+* La matriz de confusión (Confusion Matrix) muestra que la mayoría de las quejas son clasificadas correctamente por el modelo, y que los errores de clasificación se concentran principalmente en los temas 1 y 2.
+* El reporte de clasificación (Classification Report) proporciona una visión detallada de las métricas de evaluación para cada tema, incluyendo la precisión, recall y F1-score. Los valores más altos de estas métricas se observan en los temas 0, 1 y 2, mientras que los valores más bajos se observan en los temas 3 y 4.
+* Por los resultados se puede concluir que el modelo tiene un buen desempeño en la clasificación de las quejas, con un alto porcentaje de casos clasificados correctamente, un buen equilibrio entre Precision y Recall, y un bajo número de errores de clasificación.
 
 ### Model Inference
 
-Se utiliza el archivo random_complaints.csv para inferir los resultados usado el modelo elegido, por ejemplo, el siguiente texto "jp morgan chase bank  an individual or group of individuals have accessed sensitive information and are now calling in to document fake reports on my name and have blocked me out of my checking account  its a collective group of individuals doing a mass fraud scheme and have simply targeted me for whatever hateful and spiteful reasons." indica que es del tópico: Bank Account services, lo cual es correcto.
+Se utiliza el archivo random_complaints.csv para inferir los resultados usado el modelo elegido, por ejemplo para el siguiente texto: 
+
+"jp morgan chase bank  an individual or group of individuals have accessed sensitive information and are now calling in to document fake reports on my name and have blocked me out of my checking account  its a collective group of individuals doing a mass fraud scheme and have simply targeted me for whatever hateful and spiteful reasons.".
+
+Se indica que es del tópico 2: Bank Account services, lo cual es correcto.
 
 ### Code readability and conciseness
 
