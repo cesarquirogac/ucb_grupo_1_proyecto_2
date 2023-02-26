@@ -54,5 +54,5 @@ git clone <GITHUB_REPO_URL>
 3. Abrir el archivo ** *.ipynb** el mismo es un notebook que puede ser utilizando en Anaconda o Python con la dependencia de Jupyter instalada.
 
 ```
-jupyter notebook <MDSv3_ML_P1Advanced_Regression.ipynb>
+jupyter notebook <NLP - Clasificacion Automatica de Tickets.ipynb>
 ```
